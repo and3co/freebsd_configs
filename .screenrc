@@ -1,0 +1,20 @@
+# This is Chris--'s .screenrc file
+# #
+# # disable the startup splash message that screen displays on startup
+startup_message off
+# # create a status line at the bottom of the screen.  this will show the titles and locations of
+# # all screen windows you have open at any given time
+hardstatus alwayslastline "%{= dR} %-Lw%50>%{= dG}%n%f* %{= dW}%t%{= dR}%+Lw%<"
+# # bind some function keys (k1 == F1, etc) for fast navigation through screen windows
+# #
+# #
+# # use F8 to turn the status bar off at the bottom of the screen
+bindkey -k k8 hardstatus alwayslastline
+# # use F9 to turn the status bar on the bottom back on
+bindkey -k k9 hardstatus alwaysignore
+# # the next 2 lines are set up to use F1 and F2 to move one screen forward or backward (respectively) through your screen session.
+bindkey -k k1 prev
+bindkey -k k2 next
+#
+autodetach on
+vbell off
