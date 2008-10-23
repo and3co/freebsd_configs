@@ -12,7 +12,7 @@ noremap!Del Bs
 set bs=2
 au BufRead,BufNewFile *.thtml set filetype=php 
 set matchpairs=(:),{:},[:],<:>
-colorscheme ir_black.vim
+colorscheme ir_black
 set encoding=utf-8
 set fileencoding=utf8
 set termencoding=iso-8859-2
