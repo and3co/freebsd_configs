@@ -23,7 +23,6 @@ setenv	BLOCKSIZE	K
 setenv  LC_ALL hu_HU.ISO8859-2
 setenv  LANG hu_HU.ISO8859-2
 setenv  FTP_PASSIVE_MODE
-setenv  TERM xterm-256color 
 if ($?prompt) then
 	# An interactive shell -- set some stuff up
 	set filec

@@ -26,5 +26,7 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 :let g:do_xhtml_mappings = 'yes'
-set t_Co=256
+if $TERM == "xterm-256color" 
+  set t_Co=256
+endif
 
