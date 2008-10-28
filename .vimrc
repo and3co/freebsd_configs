@@ -28,5 +28,5 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 :let g:do_xhtml_mappings = 'yes'
 if $TERM =~ '256color' 
   set t_Co=256
-  colorscheme railscast 
+  colorscheme railcast 
 endif
