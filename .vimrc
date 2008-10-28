@@ -26,7 +26,7 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 :let g:do_xhtml_mappings = 'yes'
-if &term ~= "256color" 
+if $TERM =~ '256color' 
   set t_Co=256
   colorscheme railscast 
 endif
