@@ -12,7 +12,7 @@ noremap!Del Bs
 set bs=2
 au BufRead,BufNewFile *.thtml set filetype=php 
 set matchpairs=(:),{:},[:],<:>
-colorscheme ir_black
+colorscheme torte 
 set encoding=utf-8
 set fileencoding=utf8
 set termencoding=iso-8859-2
@@ -26,7 +26,7 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 :let g:do_xhtml_mappings = 'yes'
-if $TERM == "xterm-256color" 
+if &term ~= "256color" 
   set t_Co=256
+  colorscheme railscast 
 endif
-
